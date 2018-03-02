@@ -7,7 +7,7 @@ React component for easier promise handling
 npm
 
 ```
-npm install --save react-social-login-buttons
+npm install --save react-promise-state
 ```
 
 ## Importing
