@@ -2,18 +2,54 @@
   "name": "react-promise-state",
   "version": "1.0.0",
   "description": "React component for easier promise handling",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src/ --out-dir lib/",
+    "test": "jest src",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MichalSzorad/react-promise-state.git"
   },
-  "author": "",
+  "keywords": [
+    "react",
+    "promise",
+    "render",
+    "property",
+    "prop"
+  ],
+  "author": "Michal Szorad <miso.szorad@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MichalSzorad/react-promise-state/issues"
   },
-  "homepage": "https://github.com/MichalSzorad/react-promise-state#readme"
+  "homepage": "https://github.com/MichalSzorad/react-promise-state#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.1",
+    "babel-plugin-react-html-attrs": "^2.1.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-es2015-destructuring": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^21.2.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "regenerator-runtime": "^0.11.1"
+  },
+  "peerDependencies": {
+    "react": ">= 15.0.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.1"
+  }
 }
